@@ -1,0 +1,68 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less';
+@import 'antd-custom.less';
+
+// Layout
+@layout-header-background: #fff;
+@layout-body-background: #fff;
+@layout-header-height: 7.5rem;
+
+// Buttons
+@btn-border-radius-base: 1rem;
+
+
+#logo {
+    float: left;
+    width: 15.625rem;
+    background: rgba(255, 255, 255, 0.3);
+    img {
+        width: 13.75rem;
+        height: 4.8125rem;
+        cursor: pointer;
+    }
+}
+.ant-row-rtl #logo {
+    float: right;
+    margin: 1rem 0 1rem 1.5rem;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0 2px 5px #eee;
+    .lang-btn {
+        float: right;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            width: 4rem;
+            height: 4rem;
+            font-size: 1.125rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #3c4c66;
+            border-radius: 5px;
+            color: #3c4c66;
+            cursor: pointer;
+        }
+    }
+    .ant-anchor {
+        display: flex;
+        height: 7.5rem;
+        align-items: center;
+        .ant-anchor-ink {
+            display: none;
+        }
+        .ant-anchor-link {
+            padding: 0.5rem 0 0.5rem 3.125rem;
+            font-weight: bold;
+        }
+        a {
+            font-size: 1.125rem;
+        }
+    }
+}

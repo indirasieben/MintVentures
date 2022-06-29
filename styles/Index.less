@@ -1,0 +1,472 @@
+.mint {
+    padding-top: 7.5rem;
+    .mint-home {
+        width: 100%;
+        height: 60rem;
+        display: flex;
+        align-items: center;
+        padding-left: 18.75rem;
+        background-image: url('/images/home_image.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        .mint-desc {
+            font-size: 4.5rem;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+        }
+        .ant-btn {
+            width: 12.5rem;
+            height: 4rem;
+            font-size: 1.5rem;
+            border-radius: 12.5rem;
+        }
+    }
+    .mint-box {
+        display: flex;
+        height: 12.5rem;
+        justify-content: space-between;
+        background-color: #fff;
+        margin: 4.375rem 0 5rem;
+        .mint-grid-label {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding-left: 25rem;
+        }
+        .box-left {
+            width: 66.6%;
+            position: relative;
+            .bottom-triangle {
+                width: 0;
+                height: 0;
+                border-bottom: 12.5rem solid #fff;
+                border-left: 3.4375rem solid transparent;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .image-left {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 23.5rem;
+            }
+            .image-right {
+                position: absolute;
+                right: 1.25rem;
+                top: -1.875rem;
+                width: 17.6875rem;
+            }
+        }
+        .box-right {
+            width: 15.6%;
+            position: relative;
+            .top-triangle {
+                width: 0;
+                height: 0;
+                border-top: 12.5rem solid #fff;
+                border-right: 3.4375rem solid transparent;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+    .mint-portfolio {
+        .portfolio-box {
+            .portfolio-label {
+                display: flex;
+                font-size: 1.875rem;
+                font-weight: bold;
+                color: #3c4c66;
+                margin-top: 1.875rem;
+                .portfolio-border {
+                    display: inline-block;
+                    width: 100%;
+                    border-bottom: 1px solid #bdbdbd;
+                    margin-left: 1.25rem;
+                    flex: 1;
+                }
+            }
+            .portfolio-img {
+                .portfolio-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1.25rem 0.625rem 0;
+                }
+                img {
+                    width: 16.25rem;
+                    height: 5rem;
+                    cursor: pointer;
+                    // filter: grayscale(100%);
+                    // &:hover {
+                    //     filter: grayscale(0%);
+                    // }
+                }
+            }
+        }
+    }
+    .mint-team {
+        .team-card {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            .team-info {
+                box-shadow: 0 0.625rem 1rem #ddd;
+                border-radius: 1.25rem;
+                background-color: #dbdbdb;
+                position: relative;
+                background-repeat: repeat;
+                background-size: 100%;
+                .team-role {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    bottom: 5.625rem;
+                    padding-left: 1.25rem;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+                .team-name {
+                    height: 5rem;
+                    background-color: #fff;
+                    border-radius: 0 0 1.25rem 1.25rem;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    color: #3c4c66;
+                    padding-left: 1.25rem;
+                    font-weight: bold;
+                }
+            }
+            .team-desc {
+                display: flex;
+                flex-direction: column;
+                width: calc(100% - 31.25rem);
+                justify-content: center;
+                font-size: 1rem;
+                color: #666;
+                .email {
+                    font-weight: bold;
+                    padding-bottom: 1rem;
+                }
+
+                .subDesc {
+                    white-space: pre-wrap;
+                }
+            }
+        }
+    }
+    .mint-insights {
+        .insights-box {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1.25rem;
+            align-items: center;
+            cursor: pointer;
+            .insights-img {
+                background-color: #ddd;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .insights-none-img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    img {
+                        width: 10.3rem;
+                        height: 3.6rem;
+                    }
+                }
+            }
+            .insights-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .insights-title {
+                    font-weight: bold;
+                    color: #3c4c66;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .insights-desc {
+                    font-size: 1rem;
+                    color: #666;
+                    padding: 1rem 0;
+                }
+                .insights-time {
+                    font-size: 1rem;
+                    color: #999;
+                    text-align: right;
+                }
+            }
+        }
+        .insights-more {
+            width: 12.5rem;
+            height: 4rem;
+            padding: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6.25rem;
+            background-image: linear-gradient(to right, #01c0a3, #fdb889);
+            margin: 4.875rem auto 25rem;
+            cursor: pointer;
+            .btn-more {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6.25rem;
+                background-color: #fff;
+                font-size: 1.5rem;
+                color: #3c4c66;
+                font-weight: bold;
+            }
+        }
+    }
+    .mint-contract-us {
+        background: linear-gradient(90deg, #01c0a3, #fdb889);
+        height: 41.25rem;
+        position: relative;
+        .contract-us-box {
+            font-size: 1.5rem;
+            color: #afb5be;
+            position: absolute;
+            width: 80%;
+            height: 43.75rem;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #fff;
+            top: -12.5rem;
+            border-radius: 1.875rem;
+            box-shadow: 0 2px 5px #eee;
+            .contract-us-head {
+                border-radius: 1.875rem 1.875rem 0 0;
+                position: relative;
+                height: 12.5rem;
+                background-image: linear-gradient(to right, #7173b8, #aca8c8);
+                font-size: 3rem;
+                font-weight: bold;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                padding-left: 20.5rem;
+                .image-left {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 20rem;
+                }
+                .image-right {
+                    position: absolute;
+                    right: 1.25rem;
+                    top: 0;
+                    width: 17.6rem;
+                }
+            }
+            .contract-us-desc {
+                text-align: center;
+            }
+            .contract-us-email {
+                text-align: center;
+                color: #3c4c66;
+                font-weight: bold;
+            }
+            .contract-us-subdesc {
+                text-align: center;
+            }
+            .contract-us-more {
+                width: 12.5rem;
+                height: 4rem;
+                padding: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6.25rem;
+                background-image: linear-gradient(to right, #01c0a3, #fdb889);
+                margin: 1.25rem auto 2.5rem;
+                cursor: pointer;
+                .btn-more {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 6.25rem;
+                    background-color: #fff;
+                    font-size: 1.5rem;
+                    color: #3c4c66;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .subscribe-mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 99;
+        .subscribe-submit-box {
+            position: absolute;
+            width: 50rem;
+            height: 31.25rem;
+            border-radius: 1.875rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: #fff;
+            &-tit {
+                height: 5rem;
+                line-height: 5rem;
+                background: linear-gradient(90deg, #01c0a3, #fdb889);
+                border-radius: 1.875rem 1.875rem 0 0;
+                font-size: 2.25rem;
+                color: #fff;
+                padding: 0 2.6875rem 0 3.6rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &-close {
+                    font-size: 4.5rem;
+                    font-weight: 200;
+                    transform: rotate(45deg);
+                    -ms-transform: rotate(45deg); /* IE 9 */
+                    -moz-transform: rotate(45deg); /* Firefox */
+                    -webkit-transform: rotate(45deg); /* Safari 和 Chrome */
+                    -o-transform: rotate(45deg); /* Opera */
+                    cursor: pointer;
+                }
+            }
+            &-content {
+                padding: 0 5.875rem 0 3.6rem;
+                &-item {
+                    display: flex;
+                    align-items: flex-end;
+                    font-size: 1.5rem;
+                    margin-top: 3.125rem;
+                    p {
+                        color: #3c4c66;
+                        margin: 0;
+                        width: 9rem;
+                    }
+                    input {
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        width: calc(100% - 10rem);
+                        border-bottom: 1px solid #3c4c66;
+                        margin-left: 1rem;
+                    }
+                }
+                &-btnbox {
+                    text-align: center;
+                    margin-top: 2.8125rem;
+                    .submit-btn {
+                        width: 12.5rem;
+                        height: 4rem;
+                        font-size: 1.5rem;
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .mint {
+        .mint-portfolio {
+            padding: 0 18%;
+        }
+        .mint-team {
+            padding: 0 20%;
+            .team-card {
+                .team-info {
+                    width: 22.5rem;
+                    height: 13rem;
+                }
+            }
+        }
+        .mint-insights {
+            padding: 0 20%;
+            .insights-box {
+                .insights-img {
+                    width: 15rem;
+                    height: 8.4375rem;
+                }
+                .insights-info {
+                    width: calc(100% - 30rem);
+                }
+                .insights-info {
+                    .insights-title {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1600px) {
+    .mint {
+        .mint-portfolio {
+            padding: 0 20%;
+        }
+        .mint-team {
+            padding: 0 20%;
+            .team-card {
+                .team-info {
+                    width: 23rem;
+                    height: 13.75rem;
+                }
+            }
+        }
+        .mint-insights {
+            padding: 0 20%;
+            .insights-box {
+                .insights-img {
+                    width: 18.75rem;
+                    height: 10.4375rem;
+                }
+                .insights-info {
+                    width: calc(100% - 40rem);
+                }
+                .insights-info {
+                    .insights-title {
+                        font-size: 1.875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1840px) {
+    .mint {
+        .mint-portfolio {
+            padding: 0 18%;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+
+.about-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0px 16px 18px 0px #eee;
+    .lang-btn {
+        float: right;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+            width: 4rem;
+            height: 4rem;
+            font-size: 1.125rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #3c4c66;
+            border-radius: 5px;
+            color: #3c4c66;
+            cursor: pointer;
+        }
+    }
+    .ant-anchor {
+        display: flex;
+        height: 7.5rem;
+        align-items: center;
+        .ant-anchor-ink {
+            display: none;
+        }
+        .ant-anchor-link {
+            padding: 0.5rem 0 0.5rem 3.125rem;
+            font-weight: bold;
+        }
+        a {
+            font-size: 1.125rem;
+        }
+    }
+}
+.about {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding-top: 7.5rem;
+    .title {
+        color: #3c4c66;
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 3.5rem;
+        text-align: center;
+        margin-top: 6rem;
+    }
+    .title-info {
+        color: #3c4c66;
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 8.0625rem;
+        text-align: center;
+    }
+    .info-box {
+        padding-bottom: 7.6875rem;
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5rem;
+            .info-img {
+                width: 23.75rem;
+                height: 9.375rem;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-position: 0;
+                position: relative;
+                word-wrap: break-word;
+                word-break: break-all;
+                .info-tit {
+                    position: absolute;
+                    top: 3.625rem;
+                    left: 10.0625rem;
+                    p {
+                        font-size: 1.875rem;
+                        color: #ffffff;
+                        margin-bottom: 0.25rem;
+                        text-align: left;
+                        line-height: 1;
+                    }
+                }
+                &1 {
+                    background-image: url('/images/about/about_1.png');
+                }
+                &2 {
+                    background-image: url('/images/about/about_2.png');
+                }
+                &3 {
+                    background-image: url('/images/about/about_3.png');
+                }
+            }
+            .info-content {
+                height: 9.375rem;
+                flex: 1;
+                color: #666666;
+                font-size: 1rem;
+                margin-left: 2.1875rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
